@@ -1,4 +1,4 @@
-"""from nomad.config.models.plugins import SchemaPackageEntryPoint
+from nomad.config.models.plugins import SchemaPackageEntryPoint
 from pydantic import Field
 
 
@@ -15,9 +15,9 @@ schema_package_entry_point = NewSchemaPackageEntryPoint(
     name='NewSchemaPackage',
     description='New schema package entry point configuration.',
     plugin_package='tools',
-)"""
+)
 
-from typing import TYPE_CHECKING
+"""from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from nomad.datamodel.datamodel import EntryArchive
@@ -242,4 +242,4 @@ class laserphysicsELN(Schema):
             ]
 
 
-m_package.__init_metainfo__()
+m_package.__init_metainfo__()"""
