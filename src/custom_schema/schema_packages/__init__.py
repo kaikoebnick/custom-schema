@@ -184,6 +184,29 @@ class laserphysicsELN(Schema):
         ),
     )
 
+    tag_1 = Quantity(
+        type=bool,
+        description='''Check if there is a nice peak in tag_1.''',
+        a_eln=ELNAnnotation(component=ELNComponentEnum.BoolEditQuantity)
+    )
+
+    voltage = Quantity(
+        type=float,
+        description='''Enter your voltage.''',
+        a_eln=ELNAnnotation(
+            component=ELNComponentEnum.NumberEditQuantity,
+        )
+    )
+    number_of_people_killed_during_measurement = Quantity(
+        type=int,
+        description='''Let us hope it is zero.''',
+        a_eln=ELNAnnotation(
+            component=ELNComponentEnum.SliderEditQuantity,
+            minValue=0,
+            maxValue=50,
+        )
+    )
+
     """platform = Quantity(
         type=MEnum(['Python', 'Julia', 'R', 'other']),
         a_eln=ELNAnnotation(
