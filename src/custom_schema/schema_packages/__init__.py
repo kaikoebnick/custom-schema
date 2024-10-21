@@ -35,7 +35,7 @@ from nomad.datamodel.metainfo.annotations import ELNAnnotation, ELNComponentEnum
 from nomad.metainfo import (
     Category,
     Datetime,
-    MEnum,
+    #MEnum,
     Quantity,
     SchemaPackage,
     Section,
