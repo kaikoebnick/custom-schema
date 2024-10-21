@@ -108,12 +108,10 @@ class Reference(ArchiveSection):
             props=dict(
                 suggestions=[
                     'article url',
-                    'article doi',
-                    'repository',
-                    'video',
-                    'docker image',
+                    'dataset url',
+                    'video url',
+                    'picture url',
                     'documentation',
-                    'hub',
                     'other',
                 ]
             ),
@@ -141,7 +139,7 @@ class Reference(ArchiveSection):
     version = Quantity(
         type=str,
         a_eln=ELNAnnotation(component=ELNComponentEnum.StringEditQuantity),
-        description='Optional field to adding version information.',
+        description='Optional field for adding version information.',
     )
 
 
@@ -156,7 +154,7 @@ class laserphysicsELN(Schema):
         type=str,
         a_eln=ELNAnnotation(component=ELNComponentEnum.StringEditQuantity),
         label='Name/Title',
-        description='The short name of the ELN.',
+        description='Short name of the ELN.',
     )
 
     date = Quantity(
@@ -180,7 +178,7 @@ class laserphysicsELN(Schema):
                 suggestions=[
                     'measurement',
                     'calibration',
-                    'fun',
+                    'other',
                 ]
             ),
         ),
